@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="site">
-      <header class="header">
+      <header id="#home" class="header">
         <div class="container">
           <div class="header__wrap">
             <div class="header__left">
@@ -29,12 +29,21 @@
 
             <nav class="header__right">
               <ul class="header__menu">
-                <li class="header__menu_item"><a href="#">Home</a></li>
-                <li class="header__menu_item"><a href="#">About me</a></li>
-                <li class="header__menu_item"><a href="#">Portfolio</a></li>
-                <li class="header__menu_item"><a href="#">Contact</a></li>
+                <li class="header__menu_item"><a href="#home">Home</a></li>
+                <li class="header__menu_item">
+                  <a href="#aboutMe">About me</a>
+                </li>
+                <li class="header__menu_item">
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="header__menu_item">
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </nav>
+            <button class="header__mobile">
+              <img class="header__mobile_icon" src="./image/menu.svg" alt="" />
+            </button>
           </div>
         </div>
       </header>
@@ -62,7 +71,7 @@
               <img
                 class="home__image"
                 src="./image/Alex.png"
-                alt="Sergey Igolyshkov"
+                alt="Alex Trukhanov"
               />
             </div>
           </div>
@@ -102,7 +111,7 @@
             </div>
           </div>
 
-          <div class="aboutMe">
+          <div id="aboutMe" class="aboutMe">
             <div class="aboutMe__body">
               <h2 class="aboutMe__body_title">About me</h2>
               <p class="aboutMe__body_text">
@@ -143,7 +152,7 @@
         </div>
       </section>
 
-      <section class="worksSection">
+      <section id="portfolio" class="worksSection">
         <div class="container">
           <h2 class="worksSection__title">Portfolio</h2>
 
@@ -232,7 +241,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer id="contact" class="footer">
         <div class="container">
           <div class="footer__wrap">
             <div class="footer__col">
